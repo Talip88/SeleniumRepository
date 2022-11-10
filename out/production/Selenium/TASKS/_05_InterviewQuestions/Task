@@ -1,0 +1,71 @@
+
+SELENİUM İNTERVİEW SORU VE CEVAPLARI
+
+1-) Selenium da kaç çeşit Locator vardır ? Hangi sırada tercih edersiniz ?
+Selenium'da aşağıda yer alan locatorler bulunmaktadır.
+Eleman bulmak için By.  dan sonra aşağıdaki metodları kullanırız.
+id
+name
+className
+linkText
+PartialLinkText
+Tag name
+Css selector
+Xpath
+
+
+
+2-) •driver.quit le driver.close arasındaki fark nedir ?
+driver.quit : bütün açılmış tarayıcıları kapatır.
+driver.close(): sadece aktif olanı kapatır.
+
+
+
+3-)•driver.navigate.to ile driver.get arasındaki fark nedir?
+driver.navigate.to :  geçmişi tutabiliyor, back ve next yapabiliyoruz.
+sayfanın tümünün yüklenmesini beklemez.
+driver.navigate.back;
+driver.navigate.forward;
+driver.get :
+geçmişi tutmaz.
+Sayfanın tümünün yüklenmesini bekler.
+
+
+
+
+4-)•Elemanın textini unu hangi metodla alırsın ?
+WebElement submitButton = driver.findElement(By.id("id"))
+String text = submitButton.getText(); // görünen text ini verir
+
+
+
+5-)•Elemanın attribute unu hangi metodla alırsın ?
+WebElement submitButton = driver.findElement(By.id("id"))
+String deger = submitButton.getAttribute("özellikeAdı");
+Yok ise null değeri döndürür.
+
+
+
+6-)•findElement ve findElements farkı nedir ? Bulamazsa ne döndürür ?
+•driver.findElement bir eleman bulur. Bulamazsa hata verir.
+driver.findElements(By.);
+Bulunulan sayfadaki verilen kritere göre bütün elelamanları bulur.
+Bulamazsa list i boş olarak döndürür.
+
+
+7-)•Radio buttonun textini nasıl alırsın ?
+
+Button.getText(); ile alınır.
+
+8-)•Kırık yani kullanılmayan linkleri nasıl bulursun ?
+List<WebElement> linkler=driver.findElements(By.tagName ("a")); //bana bu sayfadaki tüm a linklerini verir.
+        for (WebElement e : linkler){
+            if (e.getText().equals("")) //KIRIK LİNKLERİ BULMA KODU ..EKRANDA GÖRÜNEN KISMI OLMAYAN LİNKLERİ BULMA..
+            {
+                System.out.println("e.getAttribute(\"href\") = " + e.getAttribute("href"));
+                System.out.println("e.getAttribute(\"title\") = " + e.getAttribute("title"));
+                System.out.println("e.getAttribute(\"rel\") = " + e.getAttribute("rel"));
+                System.out.println("e.getAttribute(\"rel\") = " + e.getAttribute("rel"));
+
+            }
+        }
