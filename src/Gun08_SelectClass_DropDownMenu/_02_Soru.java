@@ -45,6 +45,7 @@ public class _02_Soru extends BaseDriver {
 
         //1.Yöntem  // [id='reg_form_box'] > [class='hidden_elem'] -> direct WebElement arandı, class özelliği ile
         // Görünmediğinin kontrol edilecek yer
+
         List<WebElement> secondEmail=driver.findElements(By.cssSelector("[id='reg_form_box'] > [class='hidden_elem']"));
         Assert.assertTrue("2.Email su an gözüküyor mu",(secondEmail.size()==1));
 
@@ -81,6 +82,7 @@ public class _02_Soru extends BaseDriver {
         // #fullname_field+div+div    -> WebElementi buldu, getattribute ile Class controlü yaptı
 
         //menu.selectByValue("23");
+
        driverBekleKapat();
     }
 

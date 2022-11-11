@@ -35,7 +35,6 @@ public class _07_ActionDragAndDropTest extends BaseDriver {
         aksiyon.perform();  // hedef e götür(moveToElement) ve bırak(release)
         //new Actions(driver).moveToElement(kore).release().build().perform();  //kısa hali
 
-
         MyFunc.Bekle(2);
         driverBekleKapat();
     }

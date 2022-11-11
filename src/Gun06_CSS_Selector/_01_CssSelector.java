@@ -8,6 +8,7 @@ import org.junit.Assert; // Javanın kendi Test kontrol ve organize sınıfı
 
 public class _01_CssSelector extends BaseDriver {
     public static void main(String[] args) {
+
          driver.get("https://demo.seleniumeasy.com/basic-first-form-demo.html");
 
         WebElement txtBox=driver.findElement(By.cssSelector("input[id='user-message']"));

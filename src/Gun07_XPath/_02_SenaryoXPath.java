@@ -90,14 +90,18 @@ public class _02_SenaryoXPath extends BaseDriver {
         MyFunc.Bekle(1);
 
          // ürünlerin ücretleri
+
        List<WebElement> ucretler=driver.findElements(By.xpath("//div[@class='inventory_item_price']"));
 
        double toplam=0;
+
        for(WebElement e: ucretler)
+
        {
            //System.out.println(e.getText());  //$29.99
            toplam += Double.parseDouble(e.getText().substring(1));  // [$].""  veya  replace("$","")
        }
+
         System.out.println("toplam = " + toplam);
 
         WebElement webAltToplam=driver.findElement(By.xpath("//div[@class='summary_subtotal_label']"));

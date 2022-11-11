@@ -24,20 +24,25 @@ Bu siteye gidiniz. http://demo.seleniumeasy.com/ajax-form-submit-demo.html
     @Test
     public void Test1() {
 
-                driver.get("http://demo.seleniumeasy.com/ajax-form-submit-demo.html");
+        driver.get("http://demo.seleniumeasy.com/ajax-form-submit-demo.html");
 
         WebElement name = driver.findElement(By.xpath("//*[@id=\"title\"]"));
         name.sendKeys("Birkan");
+
         WebElement comment = driver.findElement(By.xpath("//*[@id=\"description\"]"));
         comment.sendKeys("Selam Ekip :)");
+
         WebElement submit = driver.findElement(By.xpath("//*[@id=\"btn-submit\"]"));
         submit.click();
 
         // bu locator'da yer alan elementin text'i bu olana kadar bekle.
+
         WebDriverWait bekle = new WebDriverWait(driver,Duration.ofSeconds(5));
+
         bekle.until(ExpectedConditions.textToBe(By.xpath("//*[@id=\"submit-control\"]"),"Form submited Successfully!"));
 
         WebElement message = driver.findElement(By.xpath("//*[@id=\"submit-control\"]"));
+
         Assert.assertEquals("Form submited Successfully!",message.getText());
 
         driverBekleKapat();

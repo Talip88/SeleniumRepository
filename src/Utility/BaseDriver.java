@@ -13,6 +13,10 @@ import java.util.logging.Logger;
 public class BaseDriver {
     public static WebDriver driver;
 
+
+        //DOMDA OLUP GÖRÜNMEYEN ELEMANDA CCS style: display none yazar. display: block derseniz görünür. Properties i inline yaparsan aynı sırada block dersen alt alta yazar
+        //DOMDA OLUP GÖRÜNÜP MÜDAHALE EDEMEDİĞİMİZ elemanlar ise
+        // disabled yazar.
     static
     {
         //ilk adımda çalışan kod kısmı
@@ -36,6 +40,10 @@ public class BaseDriver {
 
         //driver.manage().timeouts().implicitlyWait(dr); // Bütün weblementlerin element bazında, elemente özel işlem yapılmadan önce
         // hazır hale gelmesi verilen mühlet yani süre. // eğer 2 sn yüklerse 30 sn. beklemez.
+
+
+        //explicit ile implicitin bir arada kullanılması tavsiye edilmez.
+
     }
 
     public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
