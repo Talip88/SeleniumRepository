@@ -67,6 +67,9 @@ CSS: a[id^='id_prefix_']
 CSS: a[id$='_id_sufix']
 CSS: a[id*='id_pattern']
 
+//XPATH'DE CONTAINS
+//input[contains(@class, 'tracking')]
+
 
 
 Xpath=//*[@type='submit' OR @name='btnReset']

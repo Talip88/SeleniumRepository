@@ -36,9 +36,9 @@ public class _02_Campus extends BaseDriver {
         MyFunc.Bekle(1);
         loginButton.click();
         MyFunc.Bekle(1);
-        WebElement syllabusButton=driver.findElement(By.cssSelector("div[class='details-button'][style='position: absolute; bottom: 8px; right: 8px;']"));
+        //WebElement syllabusButton=driver.findElement(B));
         MyFunc.Bekle(1);
-        syllabusButton.click();
+       // syllabusButton.click();
         MyFunc.Bekle(1);
         WebElement close=driver.findElement(By.cssSelector("#mat-dialog-1 > syllabus-content-dialog > ms-dialog > ms-dialog-buttons > " +
                 "mat-dialog-actions > ms-close-button > button > span.mat-button-wrapper > fa-icon > svg"));
