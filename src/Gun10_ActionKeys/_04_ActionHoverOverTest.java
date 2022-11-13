@@ -14,7 +14,7 @@ public class _04_ActionHoverOverTest extends BaseDriver {
 
         // isDisplay ve isEnable gibi kontroller, element HTML'in içinde var fakat görünür değil
         // durumunda kullanılır.
-        // bazı durumlarda element HTML'in içerisinde hiç yoktur.
+        // bazı durumlarda element HTML'in içerisinde hiç yoktur.0
         // elementi bulamazsa implicity wait (basedriver) devreye girer ve verilen süre kadar bulmaya çalışır.
 
         // eğer çıkıyorsa aşağıdaki durumu yap !

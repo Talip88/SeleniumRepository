@@ -25,6 +25,7 @@ public class _01_CssSelector extends BaseDriver {
 //            System.out.println("test failed");
 
         Assert.assertTrue("Mesaj bulunamadı",msg.getText().contains("merhaba selenium")); // beklenen expect
+
         // assertTrue: içindeki değer True mu ? True ise hiç bir şey yapmaz.mesaj vermez
         // değilse beklenen olmamışsa hata mesajı verir.
         //yani genel kural : Hata var ise göster

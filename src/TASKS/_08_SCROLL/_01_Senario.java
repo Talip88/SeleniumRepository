@@ -14,6 +14,7 @@ import java.util.Scanner;
 public class _01_Senario extends BaseDriver {
     @Test
     public void Test1(){
+
       // Senaryo
       // 1- https://testsheepnz.github.io/BasicCalculator.html sitesine gidiniz.
       // 2- random 100 e kadar 2 sayı üretiniz.
@@ -89,12 +90,11 @@ public class _01_Senario extends BaseDriver {
         Select ddMenu4= new Select(webMenu4);
         ddMenu4.selectByIndex(3);
 
+        WebElement clickMenu=driver.findElement(By.cssSelector("[id='integerSelect']"));
+        clickMenu.click();
+
         WebElement CalculateDivide=driver.findElement(By.cssSelector("input[id='calculateButton']"));
         CalculateDivide.click();
-
-       //double divide=uretilen1/uretilen2;
-       //
-       //Assert.assertEquals(answer.getAttribute("value"), Double.toString(divide));
 
         MyFunc.Bekle(2);
 

@@ -27,6 +27,7 @@ public class _05_Window_Switch extends BaseDriver {
         driver.get("https://www.selenium.dev/");
 
         String anaSayfaWindowID=driver.getWindowHandle();  // bulunduğum sayfanın/windowun id'sini bana verir.
+
         System.out.println("anaSayfaWindowID = " + anaSayfaWindowID);
 
 

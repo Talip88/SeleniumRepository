@@ -17,9 +17,6 @@
 //public class ActionSeleniumOdev3 extends BaseStaticDriver {
 //    public static void main(String[] args) {
 //        driver.get("http://dhtmlgoodies.com/scripts/drag-drop-nodes-quiz/drag-drop-nodes-quiz.html");
-//
-//
-//
 //        List <WebElement> cities = driver.findElements(By.cssSelector("[id^='node']"));
 //        List <WebElement> countries = driver.findElements(By.cssSelector("[id^='box']"));
 //
