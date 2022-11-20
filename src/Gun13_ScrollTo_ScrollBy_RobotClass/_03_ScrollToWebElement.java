@@ -30,7 +30,13 @@ public class _03_ScrollToWebElement extends BaseDriver {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/main/div[10]/div/div/div[1]/a/div[1]")));
 
         MyFunc.Bekle(3);
-        js.executeScript("(arguments[0].click);", element);
+
+        js.executeScript("window.scrollBy(0,-500);");
+
+
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+        element.click();
+
 
 
         MyFunc.Bekle(3);
