@@ -19,6 +19,7 @@ public class _04_FindingByClassName {
         System.out.println("submitButton.getText() = " + submitButton.getText());
         submitButton.click();
 
+
         // Chrome ctrl+f ye basıldığında inspect bölümünde
         // first_name yazarsak bütün kelimelerde arar
         // #first_name yazarsak bütün ID paramtrelerinde arar
@@ -35,8 +36,12 @@ public class _04_FindingByClassName {
         for(WebElement e : labellar)
             System.out.println("e.getText() = " + e.getText());
 
-        // aranılan eleman bulunamazsa : findElement NoSuchElement hatası veriri
+
+
+        // Aranılan eleman bulunamazsa : findElement NoSuchElement hatası verir...
         // fidnElements ise size ı 0 olan List verir, yani hata vermez.
+
+
 
         MyFunc.Bekle(10);
         driver.quit();

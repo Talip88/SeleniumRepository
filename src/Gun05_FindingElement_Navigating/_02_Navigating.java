@@ -22,6 +22,9 @@ public class _02_Navigating extends BaseDriver {
         MyFunc.Bekle(3);
         driver.navigate().back(); // tarayıcı history isinden geri geldim.
 
+
+
+
         System.out.println(driver.getCurrentUrl()); // o anda bulunğum URL veriyor.
 
         MyFunc.Bekle(3);

@@ -3,6 +3,7 @@ package Gun10_ActionKeys;
 import Utility.BaseDriver;
 import Utility.MyFunc;
 import org.junit.Test;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -10,6 +11,8 @@ public class _05_IntroAlert extends BaseDriver {
 
     @Test
     public void Test1(){
+
+        Alert alert=driver.switchTo().alert();
 
         driver.get("http://demo.seleniumeasy.com/javascript-alert-box-demo.html");
 
@@ -23,6 +26,9 @@ public class _05_IntroAlert extends BaseDriver {
 
         MyFunc.Bekle(2);
 
+        System.out.println(driver.getTitle());
+
+        System.out.println(driver.findElement(By.tagName("title")).getText());
 
         driverBekleKapat();
 
