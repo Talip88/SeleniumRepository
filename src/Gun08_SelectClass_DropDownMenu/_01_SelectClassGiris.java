@@ -18,6 +18,8 @@ public class _01_SelectClassGiris extends BaseDriver {
 
         Select ddMenu= new Select(webMenu); // select menu,DropDown menu
 
+
+
         //ddMenu.selectByVisibleText("Books");
         //ddMenu.selectByIndex(5);  // index 0 dan başlıyor
         ddMenu.selectByValue("search-alias=stripbooks-intl-ship");

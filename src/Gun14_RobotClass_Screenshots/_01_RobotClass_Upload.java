@@ -42,7 +42,7 @@ public class _01_RobotClass_Upload extends BaseDriver {
         MyFunc.Bekle(1);
 
         // CTRL + V bastırma
-        rbt.keyPress(KeyEvent.VK_CONTROL);
+        rbt.keyPress(KeyEvent.                              VK_CONTROL);
         rbt.keyPress(KeyEvent.VK_V);
         MyFunc.Bekle(1);
         // CTRL + V bıraktırma

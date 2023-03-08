@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import sun.security.krb5.internal.KdcErrException;
+
 
 //4--//Bu websitesine gidiniz.  [https://testpages.herokuapp.com/styled/index.html]
 //

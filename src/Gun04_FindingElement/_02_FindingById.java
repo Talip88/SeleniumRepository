@@ -25,7 +25,7 @@ public class _02_FindingById {
         WebElement labelLastName = driver.findElement(By.id("sublabel_8_last"));
         System.out.println("labelLastName.getText() = " + labelLastName.getText());
 
-        MyFunc.Bekle(10);
+        MyFunc.Bekle(33);
         driver.quit();
     }
 }

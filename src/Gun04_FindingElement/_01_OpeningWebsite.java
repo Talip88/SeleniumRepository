@@ -9,7 +9,7 @@ import java.time.Duration;
 public class _01_OpeningWebsite {
     public static void main(String[] args) {
 
-        System.setProperty("webdriver.chrome.driver", "src/Utility/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();   // web sayfasını kontrol eden görevli
         driver.get("https://www.techno.study/"); // web sayfasını aç
 
@@ -28,7 +28,8 @@ public class _01_OpeningWebsite {
         //driver.close();---> içinde bulunduğu tabı kapatır
         //driver.quit(); ---> birden fazla tabı kapatır
         //driver.manage().window().getSize();---> içinde bulunulan sayfanın ölçülerini getirir.SOUT ile yazdırırsın.. pixel olarak ölçüyü döndürür.
-        //driver.manage().window().getPosition()-->açılan pencere hangi pixel nokrasından başlar.. SOL ALT KÖŞEDEN BAŞLAR SELENİUM..sol alttan sağa ve yukarı doğru kaç pixel gibi
+        //driver.manage().window().getPosition()-->açılan pencere hangi pixel nokrasından başlar..
+        // SOL ALT KÖŞEDEN BAŞLAR SELENİUM..sol alttan sağa ve yukarı doğru kaç pixel gibi
 
         //driver.manage().window().setPosition( new Point(15,15)); --->
         //driver.manage().window().getSize(new Dimension( 900,600));---> içinde olduğu sayfanın sol alt köşesini içine yazacağımız pixel noktasına getirir.

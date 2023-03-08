@@ -31,12 +31,6 @@ public class _02_RobotClass_Upload_2 extends BaseDriver {
         rbt.keyPress(KeyEvent.VK_ENTER);
         rbt.keyRelease(KeyEvent.VK_ENTER);
 
-        WebElement input = driver.findElement(By.id("uploadfile_0"));
-        input.sendKeys("\"C:\\Users\\talip\\OneDrive\\Masaüstü\\KURS\\Locators.docx\"");
-
-        WebElement chcBox = driver.findElement(By.xpath("//*[@id=\"terms\"]"));
-        chcBox.click();
-
 
         WebElement submit = driver.findElement(By.xpath("//*[@id=\"submitbutton\"]"));
         submit.click();
